@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginAndRegister.RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.95" />
+
+                <ImageView
+                    android:id="@+id/registerImage"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/guideline20"
+                    app:layout_constraintEnd_toStartOf="@id/guideline19"
+                    android:src="@drawable/ait_logo" />
+
+                <TextView
+                    android:id="@+id/registerNotice1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@id/registerImage"
+                    app:layout_constraintStart_toStartOf="@id/guideline20"
+                    app:layout_constraintEnd_toStartOf="@id/guideline19"
+                    android:text="Create Account"
+                    android:textSize="24sp"
+                    android:textColor="#2e2f4c"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/registerNotice2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@id/registerNotice1"
+                    app:layout_constraintStart_toStartOf="@id/guideline20"
+                    app:layout_constraintEnd_toStartOf="@id/guideline19"
+                    android:text="Please fill the form to help us \ncreate your account"
+                    android:textColor="#2e2f4c"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/registerEditTextStudentID"
+                    android:layout_width="0dp"
+                    android:layout_height="54dp"
+                    android:paddingStart="20dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintTop_toBottomOf="@id/registerNotice2"
+                    app:layout_constraintStart_toStartOf="@id/guideline20"
+                    app:layout_constraintEnd_toStartOf="@id/guideline19"
+                    android:background="@drawable/login_text_box_shape"
+                    android:hint="Student ID"
+                    android:textSize="14sp"
+                    android:textColor="#2e2f4c"
+                    android:textStyle="bold"
+                    android:textColorHint="#e6cc8a"
+                    android:ems="10"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/registerEditTextName"
+                    android:layout_width="0dp"
+                    android:layout_height="54dp"
+                    android:paddingStart="20dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/registerEditTextStudentID"
+                    app:layout_constraintStart_toStartOf="@id/guideline20"
+                    app:layout_constraintEnd_toStartOf="@id/guideline19"
+                    android:background="@drawable/login_text_box_shape"
+                    android:hint="Name"
+                    android:textSize="14sp"
+                    android:textColor="#2e2f4c"
+                    android:textStyle="bold"
+                    android:textColorHint="#e6cc8a"
+                    android:ems="10"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/registerEditTextEmailAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="54dp"
+                    android:paddingStart="20dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/registerEditTextName"
+                    app:layout_constraintStart_toStartOf="@id/guideline20"
+                    app:layout_constraintEnd_toStartOf="@id/guideline19"
+                    android:background="@drawable/login_text_box_shape"
+                    android:hint="Email Address"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#2e2f4c"
+                    android:textColorHint="#e6cc8a"
+                    android:ems="10"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/registerEditTextContact"
+                    android:layout_width="0dp"
+                    android:layout_height="54dp"
+                    android:paddingStart="20dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/registerEditTextEmailAddress"
+                    app:layout_constraintStart_toStartOf="@id/guideline20"
+                    app:layout_constraintEnd_toStartOf="@id/guideline19"
+                    android:background="@drawable/login_text_box_shape"
+                    android:hint="Contact"
+                    android:textSize="14sp"
+                    android:textColor="#2e2f4c"
+                    android:textStyle="bold"
+                    android:textColorHint="#e6cc8a"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/registerEditTextPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="54dp"
+                    android:paddingStart="20dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/registerEditTextContact"
+                    app:layout_constraintStart_toStartOf="@id/guideline20"
+                    app:layout_constraintEnd_toStartOf="@id/guideline19"
+                    android:background="@drawable/login_text_box_shape"
+                    android:hint="Password"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#2e2f4c"
+                    android:textColorHint="#e6cc8a"
+                    android:ems="10"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/registerEditTextConfirmPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="54dp"
+                    android:paddingStart="20dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/registerEditTextPassword"
+                    app:layout_constraintStart_toStartOf="@id/guideline20"
+                    app:layout_constraintEnd_toStartOf="@id/guideline19"
+                    android:background="@drawable/login_text_box_shape"
+                    android:hint="Confirm Password"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#2e2f4c"
+                    android:textColorHint="#e6cc8a"
+                    android:ems="10"
+                    android:inputType="textPassword" />
+
+                <TextView
+                    android:id="@+id/registerBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="50dp"
+                    app:layout_constraintStart_toStartOf="@id/guideline20"
+                    app:layout_constraintEnd_toStartOf="@id/guideline19"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/registerEditTextConfirmPassword"
+                    android:background="@drawable/radius_button_shape"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="15dp"
+                    android:text="Create Account"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

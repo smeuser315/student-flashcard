@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "629934949628",
+    "firebase_url": "https://capstone-e227f-default-rtdb.firebaseio.com",
+    "project_id": "capstone-e227f",
+    "storage_bucket": "capstone-e227f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629934949628:android:babf9085b54b7edf45c379",
+        "android_client_info": {
+          "package_name": "com.example.capstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629934949628-iqm69k1cviekum7rlg3mc233ds28cgs2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaCGeixbXM-wXRbSJv0XJaXlcT9GXKeY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629934949628-iqm69k1cviekum7rlg3mc233ds28cgs2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629934949628:android:c5c0b81fc894307245c379",
+        "android_client_info": {
+          "package_name": "com.example.capstonelecturer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629934949628-iqm69k1cviekum7rlg3mc233ds28cgs2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaCGeixbXM-wXRbSJv0XJaXlcT9GXKeY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629934949628-iqm69k1cviekum7rlg3mc233ds28cgs2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629934949628:android:4a88e274c84ac14e45c379",
+        "android_client_info": {
+          "package_name": "com.example.it404"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629934949628-iqm69k1cviekum7rlg3mc233ds28cgs2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaCGeixbXM-wXRbSJv0XJaXlcT9GXKeY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629934949628-iqm69k1cviekum7rlg3mc233ds28cgs2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

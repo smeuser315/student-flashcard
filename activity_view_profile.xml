@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginAndRegister.ViewProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#2e2f4c"
+        android:id="@+id/profileAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/profileTVTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="My Profile"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:onClick="OpenMenus"
+            android:id="@+id/mainCardMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_more"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/editProfileTV"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginEnd="15dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileAppBar">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fillViewport="true">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.8" />
+
+
+                <TextView
+                    android:id="@+id/profileName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text=""
+                    android:textColor="#2e2f4c"
+                    android:textSize="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/guideline20"
+                    app:layout_constraintEnd_toEndOf="@id/guideline19"/>
+
+                <TextView
+                    android:id="@+id/profileID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="#e6cc8a"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/profileName"
+                    app:layout_constraintStart_toStartOf="@id/profileName"
+                    app:layout_constraintEnd_toEndOf="@id/profileName"/>
+
+                <TextView
+                    android:id="@+id/profileEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:drawableStart="@drawable/ic_email_icon"
+                    android:drawablePadding="10dp"
+                    android:text=""
+                    android:textColor="#2e2f4c"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/profileID"
+                    app:layout_constraintStart_toStartOf="@id/profileID"
+                    app:layout_constraintEnd_toEndOf="@id/profileID"/>
+
+                <TextView
+                    android:id="@+id/profileNO"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:drawableStart="@drawable/ic_call_green_icon"
+                    android:drawablePadding="10dp"
+                    android:text=""
+                    android:textColor="#2e2f4c"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/profileEmail"
+                    app:layout_constraintStart_toStartOf="@id/profileEmail"
+                    app:layout_constraintEnd_toEndOf="@id/profileEmail"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

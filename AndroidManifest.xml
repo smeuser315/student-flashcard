@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.it404">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_school"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_school"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IT404">
+        <activity
+            android:name=".LoginAndRegister.PasswordChangeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAndRegister.PasswordChangeSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAndRegister.ForgotPasswordSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAndRegister.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAndRegister.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAndRegister.ViewProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAndRegister.AccountCreatedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Flashcard.ViewCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Flashcard.PublicMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Flashcard.CardMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Flashcard.AddCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAndRegister.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAndRegister.LoginActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:theme="@style/SplashTheme"
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
